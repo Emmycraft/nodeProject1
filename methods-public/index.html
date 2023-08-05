@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Traditional</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <h5>HTTP Methods</h5>
+            <div>
+                <a href="index.html">regular </a>
+                <a href="javascript.html">javascript </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <form action="/login" method="POST">
+                <h3>POST REQUEST</h3>
+                <div class="form-row">
+                    <label for="name"> enter name </label>
+                    <input type="text" name="name" id="name" autocomplete="false" />
+                </div>
+                <button type="submit" class="block">submit</button>
+
+            </form>
+            <form action="/all" method="GET">
+                <h3>GET REQUEST</h3>
+                <div class="form-row">
+                    <label for="name"> enter a name  </label>
+                    <input type="text" name="name" id="name" autocomplete="false" />
+                </div>
+                <button type="submit" class="block">submit</button>
+
+            </form>
+            <form action="/all/data" method="GET">
+                <h3>SPECIFIC DATA</h3>
+                <div class="form-row">
+
+                    <label for="name"> enter a name  </label>
+                    <input type="text" name="user" id="name" autocomplete="false" />
+                    <label for="limit"> enter your search limit  </label>
+                    <input type=number name="limit" id="limit" autocomplete="false" />
+                </div>
+                <button type="submit" class="block">submit</button>
+
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>
